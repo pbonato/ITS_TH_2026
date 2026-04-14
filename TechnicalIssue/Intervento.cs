@@ -24,7 +24,7 @@ namespace TechnicalIssue
         {
             List<Intervento> lista = new List<Intervento>();
 
-            using (SqlConnection conn = new SqlConnection(connString))
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
                 string query = "SELECT * FROM Interventi WHERE IdCliente=@IdCliente";
