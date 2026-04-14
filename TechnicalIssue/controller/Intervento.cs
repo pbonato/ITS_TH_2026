@@ -4,7 +4,6 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
-namespace TechnicalIssue
 namespace TechnicalIssue.controller
 {
     public class Intervento
@@ -16,47 +15,6 @@ namespace TechnicalIssue.controller
         public string Stato { get; set; }
         public int IdCliente { get; set; }
 
-        private string connString = @"Server=DESKTOP-B6PIEOF\SQLEXPRESS;Database=TestInterventiTecnici;Trusted_Connection=True;";
-
-        //Tutti gli interventi di un cliente
-        public List<Intervento> GetInterventiByCliente(int cliente)
-        {
-            List<Intervento> lista = new List<Intervento>();
-
-            using (SqlConnection conn = new SqlConnection(connString))
-            {
-                conn.Open();
-                string query = "SELECT * FROM Interventi WHERE IdCliente=@IdCliente";
-                SqlCommand cmd = new SqlCommand (query, conn);
-                cmd.Parameters.AddWithValue("@IdCliente", IdCliente);
-
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    lista.Add(new Intervento
-                    {
-                        IdIntervento = (int)reader["IdIntervento"],
-                        DataIntervento = (DateTime)reader["DataIntervento"],
-                        Descrizione = reader["Descrizione"].ToString(),
-                        Tecnico = reader["Tecnico"].ToString(),
-                        Stato = reader["Stato"].ToString(),
-                        IdCliente = (int)reader["IdCliente"]
-                    });
-                }
-            }
-            return lista;
-        }
-
-        //Tutti gli interventi 
-        public List<Intervento> GetInterventi()
-        {
-            List<Intervento> lista = new List<Intervento>();
-
-            using (SqlConnection conn = new SqlConnection(connString))
-            {
-                conn.Open();
-                string query = "SELECT * FROM Interventi";
-                SqlCommand cmd = new SqlCommand(query, conn);
         public static List<Intervento> GetInterventiByCliente(int idCliente)
         {
             List<Intervento> lista = new List<Intervento>();
@@ -102,21 +60,6 @@ namespace TechnicalIssue.controller
 
                 while (reader.Read())
                 {
-                    lista.Add(new Intervento
-                    {
-                        IdIntervento = (int)reader["IdIntervento"],
-                        DataIntervento = (DateTime)reader["DataIntervento"],
-                        Descrizione = reader["Descrizione"].ToString(),
-                        Tecnico = reader["Tecnico"].ToString(),
-                        Stato = reader["Stato"].ToString(),
-                        IdCliente = (int)reader["IdCliente"]
-                    });
-                }
-            }
-
-            return lista;
-        }
-
                     Intervento i = new Intervento();
                     i.IdIntervento = (int)reader["IdIntervento"];  // Assicurati che ci sia!
                     i.IdCliente = (int)reader["IdCliente"];        // Serve per il dropdown clienti
