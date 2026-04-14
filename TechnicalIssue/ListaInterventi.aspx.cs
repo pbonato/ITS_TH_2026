@@ -17,13 +17,13 @@ namespace TechnicalIssue
 
         }
 
-        protected System.Void Btn_aggiungi_click(System.Object sender, System.EventArgs e)  //nome del  bottone da cambiare quando verra creato
+        protected System.Void btnCreate_click(System.Object sender, System.EventArgs e)  
         {
             responce.redirect("CreaIntervento.aspx");
         }
 
-        protected System.Void Button1_Click(System.Object sender, System.EventArgs e)  //nome del  bottone da cambiare quando verra creato
-        {
+        protected System.Void btnHome_Click(System.Object sender, System.EventArgs e)
+        { 
             responce.redirect("Default.aspx");
         }
     }
