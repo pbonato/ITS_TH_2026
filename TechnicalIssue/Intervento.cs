@@ -47,7 +47,7 @@ namespace TechnicalIssue
             }
             return lista;
         }
-
+                                
         public  List<Intervento> GetInterventi()
         {
             List<Intervento> lista = new List<Intervento>();

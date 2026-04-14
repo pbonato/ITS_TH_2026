@@ -40,7 +40,8 @@ namespace TechnicalIssue
 
         private void CaricaInterventiCliente(int id)
         {
-            List<Intervento> interventi = Intervento.GetInterventiByCliente(id); // metodo da implementare in Intervento.cs
+            Intervento intervento = new Intervento();
+            List<Intervento> interventi = intervento.GetInterventiByCliente(id); // metodo da implementare in Intervento.cs
             gvInterventiCliente.DataSource = interventi;
             gvInterventiCliente.DataBind();
         }
