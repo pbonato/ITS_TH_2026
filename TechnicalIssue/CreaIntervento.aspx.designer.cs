@@ -7,7 +7,7 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace InterventiTecnici_RUSSO
+namespace TechnicalIssue
 {
 
 

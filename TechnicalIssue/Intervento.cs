@@ -20,7 +20,7 @@ namespace TechnicalIssue
 
 
         //Tutti gli interventi di un cliente
-        public List<Intervento> GetInterventiByCliente(int cliente)
+        public  List<Intervento> GetInterventiByCliente(int cliente)
         {
             List<Intervento> lista = new List<Intervento>();
 
@@ -48,7 +48,7 @@ namespace TechnicalIssue
             return lista;
         }
 
-        public static List<Intervento> GetInterventi()
+        public  List<Intervento> GetInterventi()
         {
             List<Intervento> lista = new List<Intervento>();
             string connectionString = "SERVER=DESKTOP-BAVMQE9\\SQLEXPRESS;DATABASE=TestInterventiTecnici;INTEGRATED SECURITY=True;";

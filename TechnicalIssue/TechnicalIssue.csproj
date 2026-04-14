@@ -70,20 +70,21 @@
     <Content Include="Clienti.aspx" />
     <Content Include="CreaIntervento.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="DettagliCliente.aspx" />
     <Content Include="ModificaIntervento.aspx" />
     <Content Include="Web.config" />
-    <Content Include="ListaInterventi.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Intervento.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ListaInterventi.aspx.cs">
-      <DependentUpon>ListaInterventi.aspx</DependentUpon>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="DettagliCliente.aspx.cs">
+      <DependentUpon>DettagliCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ListaInterventi.aspx.designer.cs">
-      <DependentUpon>ListaInterventi.aspx</DependentUpon>
+    <Compile Include="DettagliCliente.aspx.designer.cs">
+      <DependentUpon>DettagliCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Intervento.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

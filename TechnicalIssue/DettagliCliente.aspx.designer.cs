@@ -7,7 +7,7 @@
 // </generato automaticamente>
 //------------------------------------------------------------------------------
 
-namespace GestioneInterventiTecniciWeb
+namespace TechnicalIssue
 {
 
 

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GestioneInterventiTecniciWeb
+namespace TechnicalIssue
 {
     public partial class DettagliCliente : System.Web.UI.Page
     {

@@ -55,6 +55,11 @@ namespace TechnicalIssue
             return clienti;
         }
 
+        internal static Cliente GetClienteById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         /*
         // Metodo gestione cliente tramite IdCliente
         public static Cliente GetClienteById(int id)

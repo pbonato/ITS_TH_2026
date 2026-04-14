@@ -4,11 +4,12 @@ using System.Data.SqlClient;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace InterventiTecnici_RUSSO
+namespace TechnicalIssue
 {
     public partial class CreaIntervento : System.Web.UI.Page
     {
-        private const string ConnectionString = "SERVER=BUFFONAPOLI\\SQLEXPRESS;DATABASE=TestInterventiTecnici;INTEGRATED SECURITY=True;";
+
+        public static string connectionString = ConfigurationManager.ConnectionStrings["TechincalIssueDB"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
