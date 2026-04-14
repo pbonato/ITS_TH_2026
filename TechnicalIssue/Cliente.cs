@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -9,7 +10,8 @@ namespace TechnicalIssue
     public class Cliente
     {
         // Variabili private di classe
-        private static String connectionString = "SERVER=DESKTOP-SKKJ6EJ\\SQLEXPRESS;DATABASE=TestInterventiTecnici;INTEGRATED SECURITY=True;";
+        public static string connectionString = ConfigurationManager.ConnectionStrings["TechincalIssueDB"].ConnectionString;
+
 
         // Proprietà pubbliche di classe
         public int IdCliente { get; set; }

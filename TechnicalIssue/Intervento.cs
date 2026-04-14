@@ -51,8 +51,7 @@ namespace TechnicalIssue
         public  List<Intervento> GetInterventi()
         {
             List<Intervento> lista = new List<Intervento>();
-            string connectionString = "SERVER=DESKTOP-BAVMQE9\\SQLEXPRESS;DATABASE=TestInterventiTecnici;INTEGRATED SECURITY=True;";
-
+            
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 string query = "SELECT * FROM Interventi";

@@ -76,6 +76,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="Clienti.aspx.cs">
+      <DependentUpon>Clienti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clienti.aspx.designer.cs">
+      <DependentUpon>Clienti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreaIntervento.aspx.cs">
+      <DependentUpon>CreaIntervento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreaIntervento.aspx.designer.cs">
+      <DependentUpon>CreaIntervento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DettagliCliente.aspx.cs">
       <DependentUpon>DettagliCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -84,6 +105,13 @@
       <DependentUpon>DettagliCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Intervento.cs" />
+    <Compile Include="ModificaIntervento.aspx.cs">
+      <DependentUpon>ModificaIntervento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificaIntervento.aspx.designer.cs">
+      <DependentUpon>ModificaIntervento.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

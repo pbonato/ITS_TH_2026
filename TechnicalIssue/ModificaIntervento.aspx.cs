@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using TechnicalIssue.controller;
+
 
 namespace TechnicalIssue
 {
@@ -42,7 +42,9 @@ namespace TechnicalIssue
 
         private void CaricaIntervento(int id)
         {
-            var intervento = Intervento.GetInterventiByCliente(0).Find(i => i.IdIntervento == id); // qui puoi creare anche una funzione GetById
+            Intervento cintervento =new Intervento();
+
+            var intervento = cintervento.GetInterventiByCliente(0).Find(i => i.IdIntervento == id); // qui puoi creare anche una funzione GetById
             if (intervento != null)
             {
                 ddlClienti.SelectedValue = intervento.IdCliente.ToString();
