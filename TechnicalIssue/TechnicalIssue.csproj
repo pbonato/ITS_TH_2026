@@ -67,39 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModificaIntervento.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="controller\Intervento.cs" />
-    <Compile Include="ModificaIntervento.aspx.cs">
-      <DependentUpon>ModificaIntervento.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ModificaIntervento.aspx.designer.cs">
-      <DependentUpon>ModificaIntervento.aspx</DependentUpon>
-    <Content Include="Clienti.aspx" />
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Cliente.cs" />
-    <Compile Include="Clienti.aspx.cs">
-      <DependentUpon>Clienti.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Clienti.aspx.designer.cs">
-      <DependentUpon>Clienti.aspx</DependentUpon>
-    <Content Include="Default.aspx" />
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -126,7 +96,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49777</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:5050/</IISUrl>
+          <IISUrl>http://localhost:49777/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
