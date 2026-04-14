@@ -75,6 +75,7 @@
     <Content Include="ListaInterventi.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Intervento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ListaInterventi.aspx.cs">
       <DependentUpon>ListaInterventi.aspx</DependentUpon>
